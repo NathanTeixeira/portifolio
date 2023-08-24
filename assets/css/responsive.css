@@ -1,0 +1,210 @@
+@media screen and (max-width: 780px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-left: auto;
+    }
+
+    #h2-lang{
+        display: none;
+    }
+
+    #h2-color {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    #h2-sobre{
+        font-size: 30px;
+        text-align: center;
+        margin-left: 85px;
+        justify-content: center;
+        display: inline-flex;
+    }
+
+    h3 {
+        font-size: 27px;
+        padding: 1em;
+        margin-bottom: .4em;
+        margin-left: 30px;
+    }
+
+    .h3-sobre {
+        font-size: 27px;
+        padding: 1em;
+        margin-bottom: .4em;
+        margin-left: 60px;
+    }
+
+    p {
+        font-size: 25px;
+        margin-left: 60px;
+        margin-right: 23px;
+        line-height: 33px;
+        max-width: 70%;
+        display: flex;
+        padding: 1em;
+        margin-bottom: .4em;
+        margin-top: 0px;        
+    }
+
+    img {
+        display: none;
+    }
+
+    #nav1 {
+        margin-left: 100px;
+        margin-right: auto;
+    }
+
+    #nav2 {
+        margin-left: 65px;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .box .icon {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-top: auto;
+        transition: none;
+    }
+
+    .box {
+        display: inline;
+        width: 65px;
+        height: 65px;
+    }
+
+    .icon {
+        font-size: 28px;
+    }
+
+    .a-color:hover {
+        color: rgb(2, 2, 2);
+        transition: none;
+        range: 100%;
+    }
+
+    .box:hover {
+        width: 65px;
+        height: 65px;
+        background: #c32aa3;
+        border-radius: 35px;
+        color: #020202;
+        box-shadow: none;
+    }
+
+    .box:nth-child(1):hover {
+        background: #171515;
+        box-shadow: none;
+    }
+
+    .box:nth-child(2):hover {
+        background: #1da1f2;
+        box-shadow: none;
+    }
+
+    .box:nth-child(3):hover {
+        background: #25d366;
+        box-shadow: none;
+    }
+
+    .box:hover .icon {
+        color: #020202;
+        box-shadow: none;
+    }
+
+    #contato-img {
+        width: 280px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 4rem;
+        left: 0;
+        background: rgb(0, 0, 0);
+        text-align: center;
+        width: 100vw;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    li {
+        margin-right: 100px;
+    }
+
+    .menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgb(255, 255, 255);
+        font-size: 25px;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+}
